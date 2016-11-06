@@ -20,9 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^webapp/', include('webapp.urls')), #goes to webapp and consults webapp.urls to see where to go
     url(r'^', include('personal.urls')),
-        url(r'^blog/', include('blog.urls')), #goes to the index page
-
-
-
-
+    url(r'^blog/', include('blog.urls')), #goes to the index page
 ]
